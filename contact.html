@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact RamJanaki Hotel - Janakpur, Nepal">
+  <meta name="keywords" content="hotel contact,janakpur hotel,ramjanaki hotel">
+  <link rel="icon" type="image/svg+xml" href="img/logo.svg">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>RamJanaki Hotel | Contact</title>
+</head>
+<body>
+  <header>
+    <nav id="navbar">
+      <div class="container">
+        <h1 class="logo">
+          <a href="index.html">
+            <img src="img/logo.svg" alt="RamJanaki Logo" class="logo-img">
+            <span>RamJanaki</span>
+          </a>
+        </h1>
+        <ul>
+          <li><a href="index.html" data-en="Home" data-np="गृहपृष्ठ">Home</a></li>
+          <li><a href="about.html" data-en="About" data-np="हाम्रोबारे">About</a></li>
+          <li><a href="menu.html" data-en="Menu" data-np="मेनु">Menu</a></li>
+          <li><a href="rooms.html" data-en="Rooms" data-np="कोठा">Rooms</a></li>
+          <li><a href="facilities.html" data-en="Facilities" data-np="सुविधा">Facilities</a></li>
+          <li><a href="delivery.html" data-en="Delivery" data-np="डेलिभरी">Delivery</a></li>
+          <li><a class="current" href="contact.html" data-en="Contact" data-np="सम्पर्क">Contact</a></li>
+          <li><button class="lang-btn" onclick="toggleLanguage()"><i class="fas fa-globe"></i> <span id="lang-label">नेपाली</span></button></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section id="contact-form" class="py-3">
+    <div class="container">
+      <h1 class="l-heading"><span class="text-primary" data-en="Contact" data-np="सम्पर्क">Contact</span> <span data-en="Us" data-np="गर्नुहोस्">Us</span></h1>
+      <p data-en="Please fill out the form below to contact us" data-np="कृपया सम्पर्क गर्न तलको फारम भर्नुहोस्">Please fill out the form below to contact us</p>
+      <form onsubmit="return handleContact(event)">
+        <div class="form-group">
+          <label for="name" data-en="Name" data-np="नाम">Name</label>
+          <input type="text" id="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email" data-en="Email" data-np="इमेल">Email</label>
+          <input type="email" id="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message" data-en="Message" data-np="सन्देश">Message</label>
+          <textarea id="message" required></textarea>
+        </div>
+        <button type="submit" class="btn" data-en="Submit" data-np="पेश गर्नुहोस्">Submit</button>
+      </form>
+      <div id="contactMsg" class="order-message" style="display:none;"></div>
+    </div>
+  </section>
+
+  <section id="contact-info" class="bg-dark">
+    <div class="container">
+      <div class="box">
+        <i class="fas fa-hotel fa-3x"></i>
+        <h3 data-en="Location" data-np="स्थान">Location</h3>
+        <p data-en="Janakpur, Province No. 2, Nepal" data-np="जनकपुर, प्रदेश नं. २, नेपाल">Janakpur, Province No. 2, Nepal</p>
+      </div>
+      <div class="box">
+        <i class="fas fa-phone fa-3x"></i>
+        <h3 data-en="Phone Number" data-np="फोन नम्बर">Phone Number</h3>
+        <p>+977-41-555555</p>
+      </div>
+      <div class="box">
+        <i class="fas fa-envelope fa-3x"></i>
+        <h3 data-en="Email Address" data-np="इमेल ठेगाना">Email Address</h3>
+        <p>info@ramjanakihotel.com</p>
+      </div>
+    </div>
+  </section>
+
+  <footer id="main-footer">
+    <p data-en="RamJanaki Hotel © 2024, All Rights Reserved" data-np="रामजानकी होटल © २०२४, सर्वाधिकार सुरक्षित">RamJanaki Hotel &copy; 2024, All Rights Reserved</p>
+  </footer>
+
+  <script src="js/language.js"></script>
+  <script>
+    function handleContact(e) {
+      e.preventDefault();
+      const msg = document.getElementById('contactMsg');
+      msg.style.display = 'block';
+      msg.className = 'order-message success';
+      msg.textContent = '✅ Thank you! Your message has been received. We will contact you soon.';
+      return false;
+    }
+  </script>
+</body>
+</html>
