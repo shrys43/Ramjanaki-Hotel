@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="RamJanaki Hotel Restaurant Menu">
-  <meta name="keywords" content="hotel menu,janakpur restaurant,nepali food">
+  <meta name="keywords" content="hotel menu,janakpur restaurant,nepali food,indian food,chinese food,american food">
   <link rel="icon" type="image/svg+xml" href="img/logo.svg">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
@@ -37,113 +37,439 @@
   <section class="py-3 bg-light">
     <div class="container">
       <h1 class="l-heading text-center"><span class="text-primary" data-en="Our" data-np="हाम्रो">Our</span> <span data-en="Menu" data-np="मेनु">Menu</span></h1>
-      <p class="text-center" data-en="Authentic Nepali & Mithila cuisine, freshly prepared daily" data-np="प्रामाणिक नेपाली र मैथिली व्यञ्जन, दैनिक ताजा">Authentic Nepali & Mithila cuisine, freshly prepared daily</p>
+      <p class="text-center" data-en="Nepali, Indian, Chinese & American favourites, freshly prepared daily" data-np="नेपाली, भारतीय, चाइनिज र अमेरिकी परिकार, दैनिक ताजा">Nepali, Indian, Chinese &amp; American favourites, freshly prepared daily</p>
 
       <div class="menu-filter">
         <button class="filter-btn active" data-category="all" data-en="All" data-np="सबै">All</button>
-        <button class="filter-btn" data-category="breakfast" data-en="Breakfast" data-np="बिहानको खाना">Breakfast</button>
-        <button class="filter-btn" data-category="lunch" data-en="Lunch" data-np="दिउँसोको खाना">Lunch</button>
-        <button class="filter-btn" data-category="dinner" data-en="Dinner" data-np="बेलुकाको खाना">Dinner</button>
-        <button class="filter-btn" data-category="snacks" data-en="Snacks" data-np="खाजा">Snacks</button>
+        <button class="filter-btn" data-category="nepali" data-en="Nepali" data-np="नेपाली">Nepali</button>
+        <button class="filter-btn" data-category="indian" data-en="Indian" data-np="भारतीय">Indian</button>
+        <button class="filter-btn" data-category="chinese" data-en="Chinese" data-np="चाइनिज">Chinese</button>
+        <button class="filter-btn" data-category="american" data-en="American" data-np="अमेरिकी">American</button>
         <button class="filter-btn" data-category="beverages" data-en="Beverages" data-np="पेय पदार्थ">Beverages</button>
       </div>
 
       <div class="menu-grid">
-        <div class="menu-item" data-category="breakfast">
-          <div class="menu-icon"><i class="fas fa-bread-slice"></i></div>
-          <h3 data-en="Sel Roti" data-np="सेल रोटी">Sel Roti</h3>
-          <p data-en="Traditional Nepali ring-shaped rice bread" data-np="परम्परागत नेपाली चामलको रोटी">Traditional Nepali ring-shaped rice bread</p>
-          <span class="price">Rs. 150</span>
+        <div class="menu-item" data-category="nepali">
+          <div class="menu-img">
+            <img src="img/menu/dal-bhat.jpg" alt="Dal Bhat Tarkari" loading="lazy" width="600" height="450">
+            <span class="cuisine-tag" data-en="Nepali" data-np="नेपाली">Nepali</span>
+          </div>
+          <div class="menu-body">
+            <h3 data-en="Dal Bhat Tarkari" data-np="दाल भात तरकारी">Dal Bhat Tarkari</h3>
+            <p data-en="Classic Nepali meal with rice, lentils, curry" data-np="भात, दाल, तरकारी सहितको परम्परागत खाना">Classic Nepali meal with rice, lentils, curry</p>
+            <span class="price">Rs. 400</span>
+          </div>
         </div>
-        <div class="menu-item" data-category="breakfast">
-          <div class="menu-icon"><i class="fas fa-egg"></i></div>
-          <h3 data-en="Aloo Tama" data-np="आलु टामा">Aloo Tama</h3>
-          <p data-en="Potato and bamboo shoot curry" data-np="आलु र तामाको तरकारी">Potato and bamboo shoot curry</p>
-          <span class="price">Rs. 250</span>
+        <div class="menu-item" data-category="nepali">
+          <div class="menu-img">
+            <img src="img/menu/momo.jpg" alt="Momo (Steamed)" loading="lazy" width="600" height="450">
+            <span class="cuisine-tag" data-en="Nepali" data-np="नेपाली">Nepali</span>
+          </div>
+          <div class="menu-body">
+            <h3 data-en="Momo (Steamed)" data-np="मः मः">Momo (Steamed)</h3>
+            <p data-en="Nepali dumplings with meat or vegetables" data-np="मासु वा तरकारीको मः मः">Nepali dumplings with meat or vegetables</p>
+            <span class="price">Rs. 250</span>
+          </div>
         </div>
-        <div class="menu-item" data-category="breakfast">
-          <div class="menu-icon"><i class="fas fa-coffee"></i></div>
-          <h3 data-en="Chiura" data-np="चिउरा">Chiura</h3>
-          <p data-en="Flattened rice with yogurt and curry" data-np="दही र तरकारीसँग चिउरा">Flattened rice with yogurt and curry</p>
-          <span class="price">Rs. 180</span>
+        <div class="menu-item" data-category="nepali">
+          <div class="menu-img">
+            <img src="img/menu/sel-roti.jpg" alt="Sel Roti" loading="lazy" width="600" height="450">
+            <span class="cuisine-tag" data-en="Nepali" data-np="नेपाली">Nepali</span>
+          </div>
+          <div class="menu-body">
+            <h3 data-en="Sel Roti" data-np="सेल रोटी">Sel Roti</h3>
+            <p data-en="Traditional Nepali ring-shaped rice bread" data-np="परम्परागत नेपाली चामलको रोटी">Traditional Nepali ring-shaped rice bread</p>
+            <span class="price">Rs. 150</span>
+          </div>
         </div>
-
-        <div class="menu-item" data-category="lunch">
-          <div class="menu-icon"><i class="fas fa-utensils"></i></div>
-          <h3 data-en="Dal Bhat Tarkari" data-np="दाल भात तरकारी">Dal Bhat Tarkari</h3>
-          <p data-en="Classic Nepali meal with rice, lentils, curry" data-np="भात, दाल, तरकारी सहितको परम्परागत खाना">Classic Nepali meal with rice, lentils, curry</p>
-          <span class="price">Rs. 400</span>
+        <div class="menu-item" data-category="nepali">
+          <div class="menu-img">
+            <img src="img/menu/aloo-tama.jpg" alt="Aloo Tama" loading="lazy" width="600" height="450">
+            <span class="cuisine-tag" data-en="Nepali" data-np="नेपाली">Nepali</span>
+          </div>
+          <div class="menu-body">
+            <h3 data-en="Aloo Tama" data-np="आलु तामा">Aloo Tama</h3>
+            <p data-en="Potato and bamboo shoot curry" data-np="आलु र तामाको तरकारी">Potato and bamboo shoot curry</p>
+            <span class="price">Rs. 250</span>
+          </div>
         </div>
-        <div class="menu-item" data-category="lunch">
-          <div class="menu-icon"><i class="fas fa-drumstick-bite"></i></div>
-          <h3 data-en="Mithila Fish Curry" data-np="मैथिली माछा करी">Mithila Fish Curry</h3>
-          <p data-en="Traditional Mithila-style fish" data-np="परम्परागत मैथिली शैलीको माछा">Traditional Mithila-style fish</p>
-          <span class="price">Rs. 550</span>
+        <div class="menu-item" data-category="nepali">
+          <div class="menu-img">
+            <img src="img/menu/chiura.jpg" alt="Chiura" loading="lazy" width="600" height="450">
+            <span class="cuisine-tag" data-en="Nepali" data-np="नेपाली">Nepali</span>
+          </div>
+          <div class="menu-body">
+            <h3 data-en="Chiura" data-np="चिउरा">Chiura</h3>
+            <p data-en="Flattened rice with yogurt and curry" data-np="दही र तरकारीसँग चिउरा">Flattened rice with yogurt and curry</p>
+            <span class="price">Rs. 180</span>
+          </div>
         </div>
-        <div class="menu-item" data-category="lunch">
-          <div class="menu-icon"><i class="fas fa-seedling"></i></div>
-          <h3 data-en="Veg Thali" data-np="भेज थाली">Veg Thali</h3>
-          <p data-en="Assorted vegetarian dishes on a platter" data-np="थालीमा विभिन्न शाकाहारी परिकार">Assorted vegetarian dishes on a platter</p>
-          <span class="price">Rs. 350</span>
+        <div class="menu-item" data-category="nepali">
+          <div class="menu-img">
+            <img src="img/menu/fish-curry.jpg" alt="Mithila Fish Curry" loading="lazy" width="600" height="450">
+            <span class="cuisine-tag" data-en="Nepali" data-np="नेपाली">Nepali</span>
+          </div>
+          <div class="menu-body">
+            <h3 data-en="Mithila Fish Curry" data-np="मैथिली माछा करी">Mithila Fish Curry</h3>
+            <p data-en="Traditional Mithila-style fish" data-np="परम्परागत मैथिली शैलीको माछा">Traditional Mithila-style fish</p>
+            <span class="price">Rs. 550</span>
+          </div>
         </div>
-
-        <div class="menu-item" data-category="dinner">
-          <div class="menu-icon"><i class="fas fa-fire"></i></div>
-          <h3 data-en="Chicken Sekuwa" data-np="चिकन सेकुवा">Chicken Sekuwa</h3>
-          <p data-en="Grilled chicken with Himalayan spices" data-np="हिमाली मसलासहित ग्रिल गरिएको कुखुरा">Grilled chicken with Himalayan spices</p>
-          <span class="price">Rs. 650</span>
+        <div class="menu-item" data-category="nepali">
+          <div class="menu-img">
+            <img src="img/menu/sekuwa.jpg" alt="Chicken Sekuwa" loading="lazy" width="600" height="450">
+            <span class="cuisine-tag" data-en="Nepali" data-np="नेपाली">Nepali</span>
+          </div>
+          <div class="menu-body">
+            <h3 data-en="Chicken Sekuwa" data-np="चिकन सेकुवा">Chicken Sekuwa</h3>
+            <p data-en="Grilled chicken with Himalayan spices" data-np="हिमाली मसलासहित ग्रिल गरिएको कुखुरा">Grilled chicken with Himalayan spices</p>
+            <span class="price">Rs. 650</span>
+          </div>
         </div>
-        <div class="menu-item" data-category="dinner">
-          <div class="menu-icon"><i class="fas fa-drumstick-bite"></i></div>
-          <h3 data-en="Mutton Curry" data-np="खसीको मासु">Mutton Curry</h3>
-          <p data-en="Slow-cooked mountain goat curry" data-np="ढिलो पकाइएको पहाडी खसीको तरकारी">Slow-cooked mountain goat curry</p>
-          <span class="price">Rs. 750</span>
+        <div class="menu-item" data-category="nepali">
+          <div class="menu-img">
+            <img src="img/menu/newari-khaja.jpg" alt="Newari Khaja Set" loading="lazy" width="600" height="450">
+            <span class="cuisine-tag" data-en="Nepali" data-np="नेपाली">Nepali</span>
+          </div>
+          <div class="menu-body">
+            <h3 data-en="Newari Khaja Set" data-np="नेवारी खाजा सेट">Newari Khaja Set</h3>
+            <p data-en="Traditional Newari platter" data-np="परम्परागत नेवारी थाली">Traditional Newari platter</p>
+            <span class="price">Rs. 600</span>
+          </div>
         </div>
-        <div class="menu-item" data-category="dinner">
-          <div class="menu-icon"><i class="fas fa-utensils"></i></div>
-          <h3 data-en="Newari Khaja Set" data-np="नेवारी खाजा सेट">Newari Khaja Set</h3>
-          <p data-en="Traditional Newari platter" data-np="परम्परागत नेवारी थाली">Traditional Newari platter</p>
-          <span class="price">Rs. 600</span>
+        <div class="menu-item" data-category="nepali">
+          <div class="menu-img">
+            <img src="img/menu/chatamari.jpg" alt="Chatamari" loading="lazy" width="600" height="450">
+            <span class="cuisine-tag" data-en="Nepali" data-np="नेपाली">Nepali</span>
+          </div>
+          <div class="menu-body">
+            <h3 data-en="Chatamari" data-np="चटामरी">Chatamari</h3>
+            <p data-en="Newari rice crepe with toppings" data-np="टपिङसहितको नेवारी चटामरी">Newari rice crepe with toppings</p>
+            <span class="price">Rs. 300</span>
+          </div>
         </div>
-
-        <div class="menu-item" data-category="snacks">
-          <div class="menu-icon"><i class="fas fa-cookie"></i></div>
-          <h3 data-en="Momo (Steamed)" data-np="मः मः">Momo (Steamed)</h3>
-          <p data-en="Nepali dumplings with meat or vegetables" data-np="मासु वा तरकारीको मः मः">Nepali dumplings with meat or vegetables</p>
-          <span class="price">Rs. 250</span>
+        <div class="menu-item" data-category="nepali">
+          <div class="menu-img">
+            <img src="img/menu/yomari.jpg" alt="Yomari" loading="lazy" width="600" height="450">
+            <span class="cuisine-tag" data-en="Nepali" data-np="नेपाली">Nepali</span>
+          </div>
+          <div class="menu-body">
+            <h3 data-en="Yomari" data-np="योमरी">Yomari</h3>
+            <p data-en="Steamed rice dumpling filled with chaku and sesame" data-np="चाकु र तिलले भरिएको योमरी">Steamed rice dumpling filled with chaku and sesame</p>
+            <span class="price">Rs. 200</span>
+          </div>
         </div>
-        <div class="menu-item" data-category="snacks">
-          <div class="menu-icon"><i class="fas fa-cookie-bite"></i></div>
-          <h3 data-en="Chatamari" data-np="चटामरी">Chatamari</h3>
-          <p data-en="Newari rice crepe with toppings" data-np="टपिङसहितको नेवारी पिट्ठा">Newari rice crepe with toppings</p>
-          <span class="price">Rs. 300</span>
+        <div class="menu-item" data-category="nepali">
+          <div class="menu-img">
+            <img src="img/menu/thukpa.jpg" alt="Thukpa" loading="lazy" width="600" height="450">
+            <span class="cuisine-tag" data-en="Nepali" data-np="नेपाली">Nepali</span>
+          </div>
+          <div class="menu-body">
+            <h3 data-en="Thukpa" data-np="थुक्पा">Thukpa</h3>
+            <p data-en="Hearty Himalayan noodle soup" data-np="हिमाली चाउचाउ सुप">Hearty Himalayan noodle soup</p>
+            <span class="price">Rs. 300</span>
+          </div>
         </div>
-        <div class="menu-item" data-category="snacks">
-          <div class="menu-icon"><i class="fas fa-bread-slice"></i></div>
-          <h3 data-en="Samosa (2 pcs)" data-np="समोसा (२ पिस)">Samosa (2 pcs)</h3>
-          <p data-en="Crispy pastry with spiced potatoes" data-np="मसलायुक्त आलुको समोसा">Crispy pastry with spiced potatoes</p>
-          <span class="price">Rs. 120</span>
+        <div class="menu-item" data-category="indian">
+          <div class="menu-img">
+            <img src="img/menu/butter-chicken.jpg" alt="Butter Chicken" loading="lazy" width="600" height="450">
+            <span class="cuisine-tag" data-en="Indian" data-np="भारतीय">Indian</span>
+          </div>
+          <div class="menu-body">
+            <h3 data-en="Butter Chicken" data-np="बटर चिकन">Butter Chicken</h3>
+            <p data-en="Tandoori chicken in creamy tomato-butter gravy" data-np="क्रिमी टमाटर र बटरको झोलमा कुखुरा">Tandoori chicken in creamy tomato-butter gravy</p>
+            <span class="price">Rs. 650</span>
+          </div>
         </div>
-
+        <div class="menu-item" data-category="indian">
+          <div class="menu-img">
+            <img src="img/menu/paneer.jpg" alt="Shahi Paneer" loading="lazy" width="600" height="450">
+            <span class="cuisine-tag" data-en="Indian" data-np="भारतीय">Indian</span>
+          </div>
+          <div class="menu-body">
+            <h3 data-en="Shahi Paneer" data-np="शाही पनिर">Shahi Paneer</h3>
+            <p data-en="Cottage cheese in rich cashew and cream gravy" data-np="काजु र क्रिमको झोलमा पनिर">Cottage cheese in rich cashew and cream gravy</p>
+            <span class="price">Rs. 500</span>
+          </div>
+        </div>
+        <div class="menu-item" data-category="indian">
+          <div class="menu-img">
+            <img src="img/menu/biryani.jpg" alt="Chicken Biryani" loading="lazy" width="600" height="450">
+            <span class="cuisine-tag" data-en="Indian" data-np="भारतीय">Indian</span>
+          </div>
+          <div class="menu-body">
+            <h3 data-en="Chicken Biryani" data-np="चिकन बिरयानी">Chicken Biryani</h3>
+            <p data-en="Fragrant basmati rice layered with spiced chicken" data-np="मसलेदार कुखुरासहित बासमती भात">Fragrant basmati rice layered with spiced chicken</p>
+            <span class="price">Rs. 550</span>
+          </div>
+        </div>
+        <div class="menu-item" data-category="indian">
+          <div class="menu-img">
+            <img src="img/menu/dosa.jpg" alt="Masala Dosa" loading="lazy" width="600" height="450">
+            <span class="cuisine-tag" data-en="Indian" data-np="भारतीय">Indian</span>
+          </div>
+          <div class="menu-body">
+            <h3 data-en="Masala Dosa" data-np="मसला डोसा">Masala Dosa</h3>
+            <p data-en="Crispy rice crepe with potato filling, sambar and chutney" data-np="आलु भरिएको कुरकुरे डोसा, साम्बर र चटनी">Crispy rice crepe with potato filling, sambar and chutney</p>
+            <span class="price">Rs. 300</span>
+          </div>
+        </div>
+        <div class="menu-item" data-category="indian">
+          <div class="menu-img">
+            <img src="img/menu/chole-bhature.jpg" alt="Chole Bhature" loading="lazy" width="600" height="450">
+            <span class="cuisine-tag" data-en="Indian" data-np="भारतीय">Indian</span>
+          </div>
+          <div class="menu-body">
+            <h3 data-en="Chole Bhature" data-np="छोले भटुरे">Chole Bhature</h3>
+            <p data-en="Spicy chickpea curry with fluffy fried bread" data-np="मसलेदार छोले र भटुरे">Spicy chickpea curry with fluffy fried bread</p>
+            <span class="price">Rs. 280</span>
+          </div>
+        </div>
+        <div class="menu-item" data-category="indian">
+          <div class="menu-img">
+            <img src="img/menu/dal-makhani.jpg" alt="Dal Makhani" loading="lazy" width="600" height="450">
+            <span class="cuisine-tag" data-en="Indian" data-np="भारतीय">Indian</span>
+          </div>
+          <div class="menu-body">
+            <h3 data-en="Dal Makhani" data-np="दाल मखनी">Dal Makhani</h3>
+            <p data-en="Slow-cooked black lentils with butter and cream" data-np="बटर र क्रिमसहितको कालो दाल">Slow-cooked black lentils with butter and cream</p>
+            <span class="price">Rs. 350</span>
+          </div>
+        </div>
+        <div class="menu-item" data-category="indian">
+          <div class="menu-img">
+            <img src="img/menu/thali.jpg" alt="Veg Thali" loading="lazy" width="600" height="450">
+            <span class="cuisine-tag" data-en="Indian" data-np="भारतीय">Indian</span>
+          </div>
+          <div class="menu-body">
+            <h3 data-en="Veg Thali" data-np="भेज थाली">Veg Thali</h3>
+            <p data-en="Assorted vegetarian dishes on a platter" data-np="थालीमा विभिन्न शाकाहारी परिकार">Assorted vegetarian dishes on a platter</p>
+            <span class="price">Rs. 350</span>
+          </div>
+        </div>
+        <div class="menu-item" data-category="indian">
+          <div class="menu-img">
+            <img src="img/menu/samosa.jpg" alt="Samosa (2 pcs)" loading="lazy" width="600" height="450">
+            <span class="cuisine-tag" data-en="Indian" data-np="भारतीय">Indian</span>
+          </div>
+          <div class="menu-body">
+            <h3 data-en="Samosa (2 pcs)" data-np="समोसा (२ पिस)">Samosa (2 pcs)</h3>
+            <p data-en="Crispy pastry with spiced potatoes" data-np="मसलायुक्त आलुको समोसा">Crispy pastry with spiced potatoes</p>
+            <span class="price">Rs. 120</span>
+          </div>
+        </div>
+        <div class="menu-item" data-category="indian">
+          <div class="menu-img">
+            <img src="img/menu/naan.jpg" alt="Butter Garlic Naan" loading="lazy" width="600" height="450">
+            <span class="cuisine-tag" data-en="Indian" data-np="भारतीय">Indian</span>
+          </div>
+          <div class="menu-body">
+            <h3 data-en="Butter Garlic Naan" data-np="बटर लसुन नान">Butter Garlic Naan</h3>
+            <p data-en="Tandoor-baked flatbread with garlic butter" data-np="तन्दुरमा पकाइएको लसुन बटर नान">Tandoor-baked flatbread with garlic butter</p>
+            <span class="price">Rs. 100</span>
+          </div>
+        </div>
+        <div class="menu-item" data-category="chinese">
+          <div class="menu-img">
+            <img src="img/menu/chowmein.jpg" alt="Chicken Chowmein" loading="lazy" width="600" height="450">
+            <span class="cuisine-tag" data-en="Chinese" data-np="चाइनिज">Chinese</span>
+          </div>
+          <div class="menu-body">
+            <h3 data-en="Chicken Chowmein" data-np="चिकन चाउमिन">Chicken Chowmein</h3>
+            <p data-en="Stir-fried noodles with chicken and vegetables" data-np="कुखुरा र तरकारीसहित भुटेको चाउमिन">Stir-fried noodles with chicken and vegetables</p>
+            <span class="price">Rs. 280</span>
+          </div>
+        </div>
+        <div class="menu-item" data-category="chinese">
+          <div class="menu-img">
+            <img src="img/menu/fried-rice.jpg" alt="Mixed Fried Rice" loading="lazy" width="600" height="450">
+            <span class="cuisine-tag" data-en="Chinese" data-np="चाइनिज">Chinese</span>
+          </div>
+          <div class="menu-body">
+            <h3 data-en="Mixed Fried Rice" data-np="मिक्स फ्राइड राइस">Mixed Fried Rice</h3>
+            <p data-en="Wok-tossed rice with egg, chicken and vegetables" data-np="अण्डा, कुखुरा र तरकारीसहितको फ्राइड राइस">Wok-tossed rice with egg, chicken and vegetables</p>
+            <span class="price">Rs. 300</span>
+          </div>
+        </div>
+        <div class="menu-item" data-category="chinese">
+          <div class="menu-img">
+            <img src="img/menu/chilli-chicken.jpg" alt="Chilli Chicken" loading="lazy" width="600" height="450">
+            <span class="cuisine-tag" data-en="Chinese" data-np="चाइनिज">Chinese</span>
+          </div>
+          <div class="menu-body">
+            <h3 data-en="Chilli Chicken" data-np="चिल्ली चिकन">Chilli Chicken</h3>
+            <p data-en="Crispy chicken tossed with peppers and chilli sauce" data-np="खुर्सानी र भेडे खुर्सानीसहितको कुरकुरे कुखुरा">Crispy chicken tossed with peppers and chilli sauce</p>
+            <span class="price">Rs. 450</span>
+          </div>
+        </div>
+        <div class="menu-item" data-category="chinese">
+          <div class="menu-img">
+            <img src="img/menu/manchurian.jpg" alt="Chicken Manchurian" loading="lazy" width="600" height="450">
+            <span class="cuisine-tag" data-en="Chinese" data-np="चाइनिज">Chinese</span>
+          </div>
+          <div class="menu-body">
+            <h3 data-en="Chicken Manchurian" data-np="चिकन मन्चुरियन">Chicken Manchurian</h3>
+            <p data-en="Fried chicken balls in tangy Manchurian sauce" data-np="अमिलो मन्चुरियन ससमा कुखुराको डल्लो">Fried chicken balls in tangy Manchurian sauce</p>
+            <span class="price">Rs. 420</span>
+          </div>
+        </div>
+        <div class="menu-item" data-category="chinese">
+          <div class="menu-img">
+            <img src="img/menu/spring-rolls.jpg" alt="Veg Spring Rolls" loading="lazy" width="600" height="450">
+            <span class="cuisine-tag" data-en="Chinese" data-np="चाइनिज">Chinese</span>
+          </div>
+          <div class="menu-body">
+            <h3 data-en="Veg Spring Rolls" data-np="भेज स्प्रिङ रोल">Veg Spring Rolls</h3>
+            <p data-en="Golden rolls stuffed with crunchy vegetables" data-np="तरकारी भरिएको सुनौलो रोल">Golden rolls stuffed with crunchy vegetables</p>
+            <span class="price">Rs. 220</span>
+          </div>
+        </div>
+        <div class="menu-item" data-category="chinese">
+          <div class="menu-img">
+            <img src="img/menu/hot-sour-soup.jpg" alt="Hot and Sour Soup" loading="lazy" width="600" height="450">
+            <span class="cuisine-tag" data-en="Chinese" data-np="चाइनिज">Chinese</span>
+          </div>
+          <div class="menu-body">
+            <h3 data-en="Hot &amp; Sour Soup" data-np="हट एन्ड सोर सुप">Hot &amp; Sour Soup</h3>
+            <p data-en="Spicy, tangy soup with vegetables and tofu" data-np="तरकारी र टोफुसहितको पिरो-अमिलो सुप">Spicy, tangy soup with vegetables and tofu</p>
+            <span class="price">Rs. 200</span>
+          </div>
+        </div>
+        <div class="menu-item" data-category="chinese">
+          <div class="menu-img">
+            <img src="img/menu/sweet-sour.jpg" alt="Sweet and Sour Chicken" loading="lazy" width="600" height="450">
+            <span class="cuisine-tag" data-en="Chinese" data-np="चाइनिज">Chinese</span>
+          </div>
+          <div class="menu-body">
+            <h3 data-en="Sweet &amp; Sour Chicken" data-np="स्वीट एन्ड सोर चिकन">Sweet &amp; Sour Chicken</h3>
+            <p data-en="Crispy chicken with pineapple and peppers" data-np="भुइँकटहर र भेडे खुर्सानीसहितको कुखुरा">Crispy chicken with pineapple and peppers</p>
+            <span class="price">Rs. 480</span>
+          </div>
+        </div>
+        <div class="menu-item" data-category="american">
+          <div class="menu-img">
+            <img src="img/menu/burger.jpg" alt="Classic Cheeseburger" loading="lazy" width="600" height="450">
+            <span class="cuisine-tag" data-en="American" data-np="अमेरिकी">American</span>
+          </div>
+          <div class="menu-body">
+            <h3 data-en="Classic Cheeseburger" data-np="क्लासिक चिजबर्गर">Classic Cheeseburger</h3>
+            <p data-en="Grilled patty with cheese, lettuce and tomato" data-np="चिज, सलाद र टमाटरसहितको बर्गर">Grilled patty with cheese, lettuce and tomato</p>
+            <span class="price">Rs. 450</span>
+          </div>
+        </div>
+        <div class="menu-item" data-category="american">
+          <div class="menu-img">
+            <img src="img/menu/pizza.jpg" alt="Margherita Pizza" loading="lazy" width="600" height="450">
+            <span class="cuisine-tag" data-en="American" data-np="अमेरिकी">American</span>
+          </div>
+          <div class="menu-body">
+            <h3 data-en="Margherita Pizza" data-np="मार्गेरिटा पिज्जा">Margherita Pizza</h3>
+            <p data-en="Wood-fired pizza with tomato, mozzarella and basil" data-np="टमाटर, मोजरेला र तुलसीसहितको पिज्जा">Wood-fired pizza with tomato, mozzarella and basil</p>
+            <span class="price">Rs. 600</span>
+          </div>
+        </div>
+        <div class="menu-item" data-category="american">
+          <div class="menu-img">
+            <img src="img/menu/fried-chicken.jpg" alt="Crispy Fried Chicken" loading="lazy" width="600" height="450">
+            <span class="cuisine-tag" data-en="American" data-np="अमेरिकी">American</span>
+          </div>
+          <div class="menu-body">
+            <h3 data-en="Crispy Fried Chicken" data-np="क्रिस्पी फ्राइड चिकन">Crispy Fried Chicken</h3>
+            <p data-en="Southern-style crunchy fried chicken (4 pcs)" data-np="दक्षिणी शैलीको कुरकुरे कुखुरा (४ पिस)">Southern-style crunchy fried chicken (4 pcs)</p>
+            <span class="price">Rs. 550</span>
+          </div>
+        </div>
+        <div class="menu-item" data-category="american">
+          <div class="menu-img">
+            <img src="img/menu/club-sandwich.jpg" alt="Club Sandwich" loading="lazy" width="600" height="450">
+            <span class="cuisine-tag" data-en="American" data-np="अमेरिकी">American</span>
+          </div>
+          <div class="menu-body">
+            <h3 data-en="Club Sandwich" data-np="क्लब स्यान्डविच">Club Sandwich</h3>
+            <p data-en="Triple-decker with chicken, egg and cheese" data-np="कुखुरा, अण्डा र चिजसहितको स्यान्डविच">Triple-decker with chicken, egg and cheese</p>
+            <span class="price">Rs. 380</span>
+          </div>
+        </div>
+        <div class="menu-item" data-category="american">
+          <div class="menu-img">
+            <img src="img/menu/hot-dog.jpg" alt="Hot Dog" loading="lazy" width="600" height="450">
+            <span class="cuisine-tag" data-en="American" data-np="अमेरिकी">American</span>
+          </div>
+          <div class="menu-body">
+            <h3 data-en="Hot Dog" data-np="हट डग">Hot Dog</h3>
+            <p data-en="Grilled sausage in a soft bun with mustard" data-np="मस्टर्डसहित नरम पाउरोटीमा ससेज">Grilled sausage in a soft bun with mustard</p>
+            <span class="price">Rs. 300</span>
+          </div>
+        </div>
+        <div class="menu-item" data-category="american">
+          <div class="menu-img">
+            <img src="img/menu/fries.jpg" alt="French Fries" loading="lazy" width="600" height="450">
+            <span class="cuisine-tag" data-en="American" data-np="अमेरिकी">American</span>
+          </div>
+          <div class="menu-body">
+            <h3 data-en="French Fries" data-np="फ्रेन्च फ्राइज">French Fries</h3>
+            <p data-en="Golden crispy potato fries" data-np="सुनौलो कुरकुरे आलु">Golden crispy potato fries</p>
+            <span class="price">Rs. 180</span>
+          </div>
+        </div>
+        <div class="menu-item" data-category="american">
+          <div class="menu-img">
+            <img src="img/menu/pancakes.jpg" alt="Pancakes" loading="lazy" width="600" height="450">
+            <span class="cuisine-tag" data-en="American" data-np="अमेरिकी">American</span>
+          </div>
+          <div class="menu-body">
+            <h3 data-en="Pancakes" data-np="प्यानकेक">Pancakes</h3>
+            <p data-en="Fluffy stack with honey and butter" data-np="मह र बटरसहितको नरम प्यानकेक">Fluffy stack with honey and butter</p>
+            <span class="price">Rs. 320</span>
+          </div>
+        </div>
         <div class="menu-item" data-category="beverages">
-          <div class="menu-icon"><i class="fas fa-mug-hot"></i></div>
-          <h3 data-en="Masala Tea" data-np="मसला चिया">Masala Tea</h3>
-          <p data-en="Nepali spiced milk tea" data-np="नेपाली मसलायुक्त चिया">Nepali spiced milk tea</p>
-          <span class="price">Rs. 80</span>
+          <div class="menu-img">
+            <img src="img/menu/masala-tea.jpg" alt="Masala Tea" loading="lazy" width="600" height="450">
+            <span class="cuisine-tag" data-en="Beverage" data-np="पेय">Beverage</span>
+          </div>
+          <div class="menu-body">
+            <h3 data-en="Masala Tea" data-np="मसला चिया">Masala Tea</h3>
+            <p data-en="Nepali spiced milk tea" data-np="नेपाली मसलायुक्त चिया">Nepali spiced milk tea</p>
+            <span class="price">Rs. 80</span>
+          </div>
         </div>
         <div class="menu-item" data-category="beverages">
-          <div class="menu-icon"><i class="fas fa-coffee"></i></div>
-          <h3 data-en="Himalayan Coffee" data-np="हिमाली कफी">Himalayan Coffee</h3>
-          <p data-en="Freshly brewed organic coffee" data-np="ताजा बनाइएको जैविक कफी">Freshly brewed organic coffee</p>
-          <span class="price">Rs. 150</span>
+          <div class="menu-img">
+            <img src="img/menu/coffee.jpg" alt="Himalayan Coffee" loading="lazy" width="600" height="450">
+            <span class="cuisine-tag" data-en="Beverage" data-np="पेय">Beverage</span>
+          </div>
+          <div class="menu-body">
+            <h3 data-en="Himalayan Coffee" data-np="हिमाली कफी">Himalayan Coffee</h3>
+            <p data-en="Freshly brewed organic coffee" data-np="ताजा बनाइएको जैविक कफी">Freshly brewed organic coffee</p>
+            <span class="price">Rs. 150</span>
+          </div>
         </div>
         <div class="menu-item" data-category="beverages">
-          <div class="menu-icon"><i class="fas fa-glass-whiskey"></i></div>
-          <h3 data-en="Lassi" data-np="लस्सी">Lassi</h3>
-          <p data-en="Traditional yogurt drink" data-np="परम्परागत दहीको पेय">Traditional yogurt drink</p>
-          <span class="price">Rs. 120</span>
+          <div class="menu-img">
+            <img src="img/menu/lassi.jpg" alt="Lassi" loading="lazy" width="600" height="450">
+            <span class="cuisine-tag" data-en="Beverage" data-np="पेय">Beverage</span>
+          </div>
+          <div class="menu-body">
+            <h3 data-en="Lassi" data-np="लस्सी">Lassi</h3>
+            <p data-en="Traditional yogurt drink" data-np="परम्परागत दहीको पेय">Traditional yogurt drink</p>
+            <span class="price">Rs. 120</span>
+          </div>
+        </div>
+        <div class="menu-item" data-category="beverages">
+          <div class="menu-img">
+            <img src="img/menu/milkshake.jpg" alt="Milkshake" loading="lazy" width="600" height="450">
+            <span class="cuisine-tag" data-en="Beverage" data-np="पेय">Beverage</span>
+          </div>
+          <div class="menu-body">
+            <h3 data-en="Milkshake" data-np="मिल्कशेक">Milkshake</h3>
+            <p data-en="Chilled shake: strawberry, chocolate or vanilla" data-np="स्ट्रबेरी, चकलेट वा भेनिला मिल्कशेक">Chilled shake: strawberry, chocolate or vanilla</p>
+            <span class="price">Rs. 220</span>
+          </div>
         </div>
       </div>
+
+      <p class="photo-credit">Food photos via <a href="https://commons.wikimedia.org" target="_blank" rel="noopener">Wikimedia Commons</a> contributors (CC BY-SA / public domain).</p>
 
       <div class="menu-cta">
         <a href="delivery.html" class="btn" data-en="Order for Delivery" data-np="डेलिभरीको लागि अर्डर गर्नुहोस्">Order for Delivery</a>
