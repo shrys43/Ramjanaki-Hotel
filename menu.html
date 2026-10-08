@@ -7,6 +7,9 @@
   <meta name="keywords" content="hotel menu,janakpur restaurant,nepali food">
   <link rel="icon" type="image/svg+xml" href="img/logo.svg">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Lora:ital,wght@0,400;0,600;1,400&family=Noto+Serif+Devanagari:wght@400;600&display=swap">
   <link rel="stylesheet" href="css/style.css">
   <title>RamJanaki Hotel | Menu</title>
 </head>
@@ -34,11 +37,16 @@
     </nav>
   </header>
 
+  <div class="page-banner banner-menu">
+    <div>
+      <span class="eyebrow" data-en="Restaurant" data-np="रेस्टुरेन्ट">Restaurant</span>
+      <h1><span class="text-primary" data-en="Our" data-np="हाम्रो">Our</span> <span data-en="Menu" data-np="मेनु">Menu</span></h1>
+      <p data-en="Authentic Nepali & Mithila cuisine, freshly prepared daily" data-np="प्रामाणिक नेपाली र मैथिली व्यञ्जन, दैनिक ताजा">Authentic Nepali & Mithila cuisine, freshly prepared daily</p>
+    </div>
+  </div>
+
   <section class="py-3 bg-light">
     <div class="container">
-      <h1 class="l-heading text-center"><span class="text-primary" data-en="Our" data-np="हाम्रो">Our</span> <span data-en="Menu" data-np="मेनु">Menu</span></h1>
-      <p class="text-center" data-en="Authentic Nepali & Mithila cuisine, freshly prepared daily" data-np="प्रामाणिक नेपाली र मैथिली व्यञ्जन, दैनिक ताजा">Authentic Nepali & Mithila cuisine, freshly prepared daily</p>
-
       <div class="menu-filter">
         <button class="filter-btn active" data-category="all" data-en="All" data-np="सबै">All</button>
         <button class="filter-btn" data-category="breakfast" data-en="Breakfast" data-np="बिहानको खाना">Breakfast</button>
@@ -50,98 +58,128 @@
 
       <div class="menu-grid">
         <div class="menu-item" data-category="breakfast">
-          <div class="menu-icon"><i class="fas fa-bread-slice"></i></div>
-          <h3 data-en="Sel Roti" data-np="सेल रोटी">Sel Roti</h3>
-          <p data-en="Traditional Nepali ring-shaped rice bread" data-np="परम्परागत नेपाली चामलको रोटी">Traditional Nepali ring-shaped rice bread</p>
-          <span class="price">Rs. 150</span>
+          <div class="menu-img"><img src="img/menu/sel-roti.jpg" alt="Sel Roti" loading="lazy"></div>
+          <div class="menu-body">
+            <h3 data-en="Sel Roti" data-np="सेल रोटी">Sel Roti</h3>
+            <p data-en="Traditional Nepali ring-shaped rice bread" data-np="परम्परागत नेपाली चामलको रोटी">Traditional Nepali ring-shaped rice bread</p>
+            <span class="price">Rs. 150</span>
+          </div>
         </div>
         <div class="menu-item" data-category="breakfast">
-          <div class="menu-icon"><i class="fas fa-egg"></i></div>
-          <h3 data-en="Aloo Tama" data-np="आलु टामा">Aloo Tama</h3>
-          <p data-en="Potato and bamboo shoot curry" data-np="आलु र तामाको तरकारी">Potato and bamboo shoot curry</p>
-          <span class="price">Rs. 250</span>
+          <div class="menu-img"><img src="img/menu/aloo-tama.jpg" alt="Aloo Tama" loading="lazy"></div>
+          <div class="menu-body">
+            <h3 data-en="Aloo Tama" data-np="आलु टामा">Aloo Tama</h3>
+            <p data-en="Potato and bamboo shoot curry" data-np="आलु र तामाको तरकारी">Potato and bamboo shoot curry</p>
+            <span class="price">Rs. 250</span>
+          </div>
         </div>
         <div class="menu-item" data-category="breakfast">
-          <div class="menu-icon"><i class="fas fa-coffee"></i></div>
-          <h3 data-en="Chiura" data-np="चिउरा">Chiura</h3>
-          <p data-en="Flattened rice with yogurt and curry" data-np="दही र तरकारीसँग चिउरा">Flattened rice with yogurt and curry</p>
-          <span class="price">Rs. 180</span>
+          <div class="menu-img"><img src="img/menu/chiura.jpg" alt="Chiura" loading="lazy"></div>
+          <div class="menu-body">
+            <h3 data-en="Chiura" data-np="चिउरा">Chiura</h3>
+            <p data-en="Flattened rice with yogurt and curry" data-np="दही र तरकारीसँग चिउरा">Flattened rice with yogurt and curry</p>
+            <span class="price">Rs. 180</span>
+          </div>
         </div>
 
         <div class="menu-item" data-category="lunch">
-          <div class="menu-icon"><i class="fas fa-utensils"></i></div>
-          <h3 data-en="Dal Bhat Tarkari" data-np="दाल भात तरकारी">Dal Bhat Tarkari</h3>
-          <p data-en="Classic Nepali meal with rice, lentils, curry" data-np="भात, दाल, तरकारी सहितको परम्परागत खाना">Classic Nepali meal with rice, lentils, curry</p>
-          <span class="price">Rs. 400</span>
+          <div class="menu-img"><img src="img/menu/dal-bhat.jpg" alt="Dal Bhat Tarkari" loading="lazy"></div>
+          <div class="menu-body">
+            <h3 data-en="Dal Bhat Tarkari" data-np="दाल भात तरकारी">Dal Bhat Tarkari</h3>
+            <p data-en="Classic Nepali meal with rice, lentils, curry" data-np="भात, दाल, तरकारी सहितको परम्परागत खाना">Classic Nepali meal with rice, lentils, curry</p>
+            <span class="price">Rs. 400</span>
+          </div>
         </div>
         <div class="menu-item" data-category="lunch">
-          <div class="menu-icon"><i class="fas fa-drumstick-bite"></i></div>
-          <h3 data-en="Mithila Fish Curry" data-np="मैथिली माछा करी">Mithila Fish Curry</h3>
-          <p data-en="Traditional Mithila-style fish" data-np="परम्परागत मैथिली शैलीको माछा">Traditional Mithila-style fish</p>
-          <span class="price">Rs. 550</span>
+          <div class="menu-img"><img src="img/menu/fish-curry.jpg" alt="Mithila Fish Curry" loading="lazy"></div>
+          <div class="menu-body">
+            <h3 data-en="Mithila Fish Curry" data-np="मैथिली माछा करी">Mithila Fish Curry</h3>
+            <p data-en="Traditional Mithila-style fish" data-np="परम्परागत मैथिली शैलीको माछा">Traditional Mithila-style fish</p>
+            <span class="price">Rs. 550</span>
+          </div>
         </div>
         <div class="menu-item" data-category="lunch">
-          <div class="menu-icon"><i class="fas fa-seedling"></i></div>
-          <h3 data-en="Veg Thali" data-np="भेज थाली">Veg Thali</h3>
-          <p data-en="Assorted vegetarian dishes on a platter" data-np="थालीमा विभिन्न शाकाहारी परिकार">Assorted vegetarian dishes on a platter</p>
-          <span class="price">Rs. 350</span>
+          <div class="menu-img"><img src="img/menu/veg-thali.jpg" alt="Veg Thali" loading="lazy"></div>
+          <div class="menu-body">
+            <h3 data-en="Veg Thali" data-np="भेज थाली">Veg Thali</h3>
+            <p data-en="Assorted vegetarian dishes on a platter" data-np="थालीमा विभिन्न शाकाहारी परिकार">Assorted vegetarian dishes on a platter</p>
+            <span class="price">Rs. 350</span>
+          </div>
         </div>
 
         <div class="menu-item" data-category="dinner">
-          <div class="menu-icon"><i class="fas fa-fire"></i></div>
-          <h3 data-en="Chicken Sekuwa" data-np="चिकन सेकुवा">Chicken Sekuwa</h3>
-          <p data-en="Grilled chicken with Himalayan spices" data-np="हिमाली मसलासहित ग्रिल गरिएको कुखुरा">Grilled chicken with Himalayan spices</p>
-          <span class="price">Rs. 650</span>
+          <div class="menu-img"><img src="img/menu/sekuwa.jpg" alt="Chicken Sekuwa" loading="lazy"></div>
+          <div class="menu-body">
+            <h3 data-en="Chicken Sekuwa" data-np="चिकन सेकुवा">Chicken Sekuwa</h3>
+            <p data-en="Grilled chicken with Himalayan spices" data-np="हिमाली मसलासहित ग्रिल गरिएको कुखुरा">Grilled chicken with Himalayan spices</p>
+            <span class="price">Rs. 650</span>
+          </div>
         </div>
         <div class="menu-item" data-category="dinner">
-          <div class="menu-icon"><i class="fas fa-drumstick-bite"></i></div>
-          <h3 data-en="Mutton Curry" data-np="खसीको मासु">Mutton Curry</h3>
-          <p data-en="Slow-cooked mountain goat curry" data-np="ढिलो पकाइएको पहाडी खसीको तरकारी">Slow-cooked mountain goat curry</p>
-          <span class="price">Rs. 750</span>
+          <div class="menu-img"><img src="img/menu/mutton-curry.jpg" alt="Mutton Curry" loading="lazy"></div>
+          <div class="menu-body">
+            <h3 data-en="Mutton Curry" data-np="खसीको मासु">Mutton Curry</h3>
+            <p data-en="Slow-cooked mountain goat curry" data-np="ढिलो पकाइएको पहाडी खसीको तरकारी">Slow-cooked mountain goat curry</p>
+            <span class="price">Rs. 750</span>
+          </div>
         </div>
         <div class="menu-item" data-category="dinner">
-          <div class="menu-icon"><i class="fas fa-utensils"></i></div>
-          <h3 data-en="Newari Khaja Set" data-np="नेवारी खाजा सेट">Newari Khaja Set</h3>
-          <p data-en="Traditional Newari platter" data-np="परम्परागत नेवारी थाली">Traditional Newari platter</p>
-          <span class="price">Rs. 600</span>
+          <div class="menu-img"><img src="img/menu/khaja-set.jpg" alt="Newari Khaja Set" loading="lazy"></div>
+          <div class="menu-body">
+            <h3 data-en="Newari Khaja Set" data-np="नेवारी खाजा सेट">Newari Khaja Set</h3>
+            <p data-en="Traditional Newari platter" data-np="परम्परागत नेवारी थाली">Traditional Newari platter</p>
+            <span class="price">Rs. 600</span>
+          </div>
         </div>
 
         <div class="menu-item" data-category="snacks">
-          <div class="menu-icon"><i class="fas fa-cookie"></i></div>
-          <h3 data-en="Momo (Steamed)" data-np="मः मः">Momo (Steamed)</h3>
-          <p data-en="Nepali dumplings with meat or vegetables" data-np="मासु वा तरकारीको मः मः">Nepali dumplings with meat or vegetables</p>
-          <span class="price">Rs. 250</span>
+          <div class="menu-img"><img src="img/menu/momo.jpg" alt="Momo (Steamed)" loading="lazy"></div>
+          <div class="menu-body">
+            <h3 data-en="Momo (Steamed)" data-np="मः मः">Momo (Steamed)</h3>
+            <p data-en="Nepali dumplings with meat or vegetables" data-np="मासु वा तरकारीको मः मः">Nepali dumplings with meat or vegetables</p>
+            <span class="price">Rs. 250</span>
+          </div>
         </div>
         <div class="menu-item" data-category="snacks">
-          <div class="menu-icon"><i class="fas fa-cookie-bite"></i></div>
-          <h3 data-en="Chatamari" data-np="चटामरी">Chatamari</h3>
-          <p data-en="Newari rice crepe with toppings" data-np="टपिङसहितको नेवारी पिट्ठा">Newari rice crepe with toppings</p>
-          <span class="price">Rs. 300</span>
+          <div class="menu-img"><img src="img/menu/chatamari.jpg" alt="Chatamari" loading="lazy"></div>
+          <div class="menu-body">
+            <h3 data-en="Chatamari" data-np="चटामरी">Chatamari</h3>
+            <p data-en="Newari rice crepe with toppings" data-np="टपिङसहितको नेवारी पिट्ठा">Newari rice crepe with toppings</p>
+            <span class="price">Rs. 300</span>
+          </div>
         </div>
         <div class="menu-item" data-category="snacks">
-          <div class="menu-icon"><i class="fas fa-bread-slice"></i></div>
-          <h3 data-en="Samosa (2 pcs)" data-np="समोसा (२ पिस)">Samosa (2 pcs)</h3>
-          <p data-en="Crispy pastry with spiced potatoes" data-np="मसलायुक्त आलुको समोसा">Crispy pastry with spiced potatoes</p>
-          <span class="price">Rs. 120</span>
+          <div class="menu-img"><img src="img/menu/samosa.jpg" alt="Samosa (2 pcs)" loading="lazy"></div>
+          <div class="menu-body">
+            <h3 data-en="Samosa (2 pcs)" data-np="समोसा (२ पिस)">Samosa (2 pcs)</h3>
+            <p data-en="Crispy pastry with spiced potatoes" data-np="मसलायुक्त आलुको समोसा">Crispy pastry with spiced potatoes</p>
+            <span class="price">Rs. 120</span>
+          </div>
         </div>
 
         <div class="menu-item" data-category="beverages">
-          <div class="menu-icon"><i class="fas fa-mug-hot"></i></div>
-          <h3 data-en="Masala Tea" data-np="मसला चिया">Masala Tea</h3>
-          <p data-en="Nepali spiced milk tea" data-np="नेपाली मसलायुक्त चिया">Nepali spiced milk tea</p>
-          <span class="price">Rs. 80</span>
+          <div class="menu-img"><img src="img/menu/masala-tea.jpg" alt="Masala Tea" loading="lazy"></div>
+          <div class="menu-body">
+            <h3 data-en="Masala Tea" data-np="मसला चिया">Masala Tea</h3>
+            <p data-en="Nepali spiced milk tea" data-np="नेपाली मसलायुक्त चिया">Nepali spiced milk tea</p>
+            <span class="price">Rs. 80</span>
+          </div>
         </div>
         <div class="menu-item" data-category="beverages">
-          <div class="menu-icon"><i class="fas fa-coffee"></i></div>
-          <h3 data-en="Himalayan Coffee" data-np="हिमाली कफी">Himalayan Coffee</h3>
-          <p data-en="Freshly brewed organic coffee" data-np="ताजा बनाइएको जैविक कफी">Freshly brewed organic coffee</p>
-          <span class="price">Rs. 150</span>
+          <div class="menu-img"><img src="img/menu/coffee.jpg" alt="Himalayan Coffee" loading="lazy"></div>
+          <div class="menu-body">
+            <h3 data-en="Himalayan Coffee" data-np="हिमाली कफी">Himalayan Coffee</h3>
+            <p data-en="Freshly brewed organic coffee" data-np="ताजा बनाइएको जैविक कफी">Freshly brewed organic coffee</p>
+            <span class="price">Rs. 150</span>
+          </div>
         </div>
         <div class="menu-item" data-category="beverages">
-          <div class="menu-icon"><i class="fas fa-glass-whiskey"></i></div>
-          <h3 data-en="Lassi" data-np="लस्सी">Lassi</h3>
-          <p data-en="Traditional yogurt drink" data-np="परम्परागत दहीको पेय">Traditional yogurt drink</p>
-          <span class="price">Rs. 120</span>
+          <div class="menu-img"><img src="img/menu/lassi.jpg" alt="Lassi" loading="lazy"></div>
+          <div class="menu-body">
+            <h3 data-en="Lassi" data-np="लस्सी">Lassi</h3>
+            <p data-en="Traditional yogurt drink" data-np="परम्परागत दहीको पेय">Traditional yogurt drink</p>
+            <span class="price">Rs. 120</span>
+          </div>
         </div>
       </div>
 
@@ -152,7 +190,10 @@
   </section>
 
   <footer id="main-footer">
+    <p class="footer-brand">RamJanaki</p>
+    <div class="ornament">❖</div>
     <p data-en="RamJanaki Hotel © 2024, All Rights Reserved" data-np="रामजानकी होटल © २०२४, सर्वाधिकार सुरक्षित">RamJanaki Hotel &copy; 2024, All Rights Reserved</p>
+    <p><a href="credits.html" data-en="Photo credits" data-np="फोटो श्रेय">Photo credits</a></p>
   </footer>
 
   <script src="js/language.js"></script>
