@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="RamJanaki Hotel Rooms - Book your stay in Janakpur, Nepal">
-  <meta name="keywords" content="hotel rooms,janakpur accommodation,room booking nepal">
+  <meta name="description" content="RamJanaki Hotel Rooms - Book your stay in Janakpur">
+  <meta name="keywords" content="hotel rooms,janakpur accommodation">
   <link rel="icon" type="image/svg+xml" href="img/logo.svg">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
@@ -24,30 +24,22 @@
           <li><a href="index.html" data-en="Home" data-np="गृहपृष्ठ">Home</a></li>
           <li><a href="about.html" data-en="About" data-np="हाम्रोबारे">About</a></li>
           <li><a href="menu.html" data-en="Menu" data-np="मेनु">Menu</a></li>
-          <li><a href="rooms.html" class="current" data-en="Rooms" data-np="कोठा">Rooms</a></li>
+          <li><a class="current" href="rooms.html" data-en="Rooms" data-np="कोठा">Rooms</a></li>
           <li><a href="facilities.html" data-en="Facilities" data-np="सुविधा">Facilities</a></li>
           <li><a href="delivery.html" data-en="Delivery" data-np="डेलिभरी">Delivery</a></li>
           <li><a href="contact.html" data-en="Contact" data-np="सम्पर्क">Contact</a></li>
-          <li>
-            <button id="lang-toggle" class="lang-btn" onclick="toggleLanguage()">
-              <i class="fas fa-globe"></i> <span id="lang-label">नेपाली</span>
-            </button>
-          </li>
+          <li><button class="lang-btn" onclick="toggleLanguage()"><i class="fas fa-globe"></i> <span id="lang-label">नेपाली</span></button></li>
         </ul>
       </div>
     </nav>
   </header>
 
-  <section id="rooms-page" class="py-3 bg-light">
+  <section class="py-3 bg-light">
     <div class="container">
-      <h1 class="l-heading text-center">
-        <span class="text-primary" data-en="Our" data-np="हाम्रा">Our</span>
-        <span data-en="Rooms & Suites" data-np="कोठा र सुइटहरू">Rooms & Suites</span>
-      </h1>
-      <p class="text-center" data-en="Choose from our range of comfortable rooms" data-np="हाम्रा आरामदायक कोठाहरूमध्येबाट छान्नुहोस्">Choose from our range of comfortable rooms</p>
+      <h1 class="l-heading text-center"><span class="text-primary" data-en="Our" data-np="हाम्रा">Our</span> <span data-en="Rooms & Suites" data-np="कोठा र सुइटहरू">Rooms & Suites</span></h1>
+      <p class="text-center" data-en="Choose from our range of comfortable rooms" data-np="हाम्रा आरामदायक कोठाहरूबाट छान्नुहोस्">Choose from our range of comfortable rooms</p>
 
       <div class="rooms-grid">
-
         <div class="room-card">
           <div class="room-img room-img-standard"></div>
           <div class="room-info">
@@ -62,7 +54,6 @@
             <a href="payment.html?room=standard&price=3500" class="btn" data-en="Book Now" data-np="अहिले बुक गर्नुहोस्">Book Now</a>
           </div>
         </div>
-
         <div class="room-card">
           <div class="room-img room-img-deluxe"></div>
           <div class="room-info">
@@ -77,7 +68,6 @@
             <a href="payment.html?room=deluxe&price=5500" class="btn" data-en="Book Now" data-np="अहिले बुक गर्नुहोस्">Book Now</a>
           </div>
         </div>
-
         <div class="room-card">
           <div class="room-img room-img-family"></div>
           <div class="room-info">
@@ -92,7 +82,6 @@
             <a href="payment.html?room=family&price=8500" class="btn" data-en="Book Now" data-np="अहिले बुक गर्नुहोस्">Book Now</a>
           </div>
         </div>
-
         <div class="room-card">
           <div class="room-img room-img-executive"></div>
           <div class="room-info">
@@ -107,7 +96,6 @@
             <a href="payment.html?room=executive&price=12000" class="btn" data-en="Book Now" data-np="अहिले बुक गर्नुहोस्">Book Now</a>
           </div>
         </div>
-
       </div>
     </div>
   </section>
