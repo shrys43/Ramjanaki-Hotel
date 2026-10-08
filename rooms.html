@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="RamJanaki Hotel Rooms - Book your stay in Janakpur, Nepal">
+  <meta name="keywords" content="hotel rooms,janakpur accommodation,room booking nepal">
+  <link rel="icon" type="image/svg+xml" href="img/logo.svg">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>RamJanaki Hotel | Rooms</title>
+</head>
+<body>
+  <header>
+    <nav id="navbar">
+      <div class="container">
+        <h1 class="logo">
+          <a href="index.html">
+            <img src="img/logo.svg" alt="RamJanaki Logo" class="logo-img">
+            <span>RamJanaki</span>
+          </a>
+        </h1>
+        <ul>
+          <li><a href="index.html" data-en="Home" data-np="गृहपृष्ठ">Home</a></li>
+          <li><a href="about.html" data-en="About" data-np="हाम्रोबारे">About</a></li>
+          <li><a href="menu.html" data-en="Menu" data-np="मेनु">Menu</a></li>
+          <li><a href="rooms.html" class="current" data-en="Rooms" data-np="कोठा">Rooms</a></li>
+          <li><a href="facilities.html" data-en="Facilities" data-np="सुविधा">Facilities</a></li>
+          <li><a href="delivery.html" data-en="Delivery" data-np="डेलिभरी">Delivery</a></li>
+          <li><a href="contact.html" data-en="Contact" data-np="सम्पर्क">Contact</a></li>
+          <li>
+            <button id="lang-toggle" class="lang-btn" onclick="toggleLanguage()">
+              <i class="fas fa-globe"></i> <span id="lang-label">नेपाली</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section id="rooms-page" class="py-3 bg-light">
+    <div class="container">
+      <h1 class="l-heading text-center">
+        <span class="text-primary" data-en="Our" data-np="हाम्रा">Our</span>
+        <span data-en="Rooms & Suites" data-np="कोठा र सुइटहरू">Rooms & Suites</span>
+      </h1>
+      <p class="text-center" data-en="Choose from our range of comfortable rooms" data-np="हाम्रा आरामदायक कोठाहरूमध्येबाट छान्नुहोस्">Choose from our range of comfortable rooms</p>
+
+      <div class="rooms-grid">
+
+        <div class="room-card">
+          <div class="room-img room-img-standard"></div>
+          <div class="room-info">
+            <h3 data-en="Standard Room" data-np="स्ट्यान्डर्ड कोठा">Standard Room</h3>
+            <p class="room-price">Rs. 3,500 <span data-en="/ night" data-np="/ रात">/ night</span></p>
+            <ul>
+              <li data-en="Queen size bed" data-np="क्वीन साइज बेड">Queen size bed</li>
+              <li data-en="Air conditioning" data-np="एयर कन्डिसनिङ">Air conditioning</li>
+              <li data-en="Free WiFi" data-np="निःशुल्क वाइफाइ">Free WiFi</li>
+              <li data-en="2 guests" data-np="२ जना">2 guests</li>
+            </ul>
+            <a href="payment.html?room=standard&price=3500" class="btn" data-en="Book Now" data-np="अहिले बुक गर्नुहोस्">Book Now</a>
+          </div>
+        </div>
+
+        <div class="room-card">
+          <div class="room-img room-img-deluxe"></div>
+          <div class="room-info">
+            <h3 data-en="Deluxe Room" data-np="डिलक्स कोठा">Deluxe Room</h3>
+            <p class="room-price">Rs. 5,500 <span data-en="/ night" data-np="/ रात">/ night</span></p>
+            <ul>
+              <li data-en="King size bed" data-np="किंग साइज बेड">King size bed</li>
+              <li data-en="Temple view" data-np="मन्दिरको दृश्य">Temple view</li>
+              <li data-en="Air conditioning" data-np="एयर कन्डिसनिङ">Air conditioning</li>
+              <li data-en="2-3 guests" data-np="२-३ जना">2-3 guests</li>
+            </ul>
+            <a href="payment.html?room=deluxe&price=5500" class="btn" data-en="Book Now" data-np="अहिले बुक गर्नुहोस्">Book Now</a>
+          </div>
+        </div>
+
+        <div class="room-card">
+          <div class="room-img room-img-family"></div>
+          <div class="room-info">
+            <h3 data-en="Family Suite" data-np="पारिवारिक सुइट">Family Suite</h3>
+            <p class="room-price">Rs. 8,500 <span data-en="/ night" data-np="/ रात">/ night</span></p>
+            <ul>
+              <li data-en="2 bedrooms" data-np="२ बेडरूम">2 bedrooms</li>
+              <li data-en="Living area" data-np="बैठक क्षेत्र">Living area</li>
+              <li data-en="Kitchenette" data-np="सानो भान्सा">Kitchenette</li>
+              <li data-en="4 guests" data-np="४ जना">4 guests</li>
+            </ul>
+            <a href="payment.html?room=family&price=8500" class="btn" data-en="Book Now" data-np="अहिले बुक गर्नुहोस्">Book Now</a>
+          </div>
+        </div>
+
+        <div class="room-card">
+          <div class="room-img room-img-executive"></div>
+          <div class="room-info">
+            <h3 data-en="Executive Suite" data-np="कार्यकारी सुइट">Executive Suite</h3>
+            <p class="room-price">Rs. 12,000 <span data-en="/ night" data-np="/ रात">/ night</span></p>
+            <ul>
+              <li data-en="Jacuzzi" data-np="जकुजी">Jacuzzi</li>
+              <li data-en="Living room" data-np="बैठक कोठा">Living room</li>
+              <li data-en="Temple view" data-np="मन्दिरको दृश्य">Temple view</li>
+              <li data-en="2 guests" data-np="२ जना">2 guests</li>
+            </ul>
+            <a href="payment.html?room=executive&price=12000" class="btn" data-en="Book Now" data-np="अहिले बुक गर्नुहोस्">Book Now</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer id="main-footer">
+    <p data-en="RamJanaki Hotel © 2024, All Rights Reserved" data-np="रामजानकी होटल © २०२४, सर्वाधिकार सुरक्षित">RamJanaki Hotel &copy; 2024, All Rights Reserved</p>
+  </footer>
+
+  <script src="js/language.js"></script>
+</body>
+</html>

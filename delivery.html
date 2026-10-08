@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="RamJanaki Hotel Food Delivery - Order online in Janakpur">
+  <meta name="keywords" content="food delivery janakpur,hotel delivery,nepali food delivery">
+  <link rel="icon" type="image/svg+xml" href="img/logo.svg">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>RamJanaki Hotel | Food Delivery</title>
+</head>
+<body>
+  <header>
+    <nav id="navbar">
+      <div class="container">
+        <h1 class="logo">
+          <a href="index.html">
+            <img src="img/logo.svg" alt="RamJanaki Logo" class="logo-img">
+            <span>RamJanaki</span>
+          </a>
+        </h1>
+        <ul>
+          <li><a href="index.html" data-en="Home" data-np="गृहपृष्ठ">Home</a></li>
+          <li><a href="about.html" data-en="About" data-np="हाम्रोबारे">About</a></li>
+          <li><a href="menu.html" data-en="Menu" data-np="मेनु">Menu</a></li>
+          <li><a href="rooms.html" data-en="Rooms" data-np="कोठा">Rooms</a></li>
+          <li><a href="facilities.html" data-en="Facilities" data-np="सुविधा">Facilities</a></li>
+          <li><a href="delivery.html" class="current" data-en="Delivery" data-np="डेलिभरी">Delivery</a></li>
+          <li><a href="contact.html" data-en="Contact" data-np="सम्पर्क">Contact</a></li>
+          <li>
+            <button id="lang-toggle" class="lang-btn" onclick="toggleLanguage()">
+              <i class="fas fa-globe"></i> <span id="lang-label">नेपाली</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section id="delivery-page" class="py-3 bg-light">
+    <div class="container">
+      <h1 class="l-heading text-center">
+        <span class="text-primary" data-en="Food" data-np="खाना">Food</span>
+        <span data-en="Delivery" data-np="डेलिभरी">Delivery</span>
+      </h1>
+      <p class="text-center" data-en="Order from our menu and get it delivered to your doorstep in Janakpur" data-np="हाम्रो मेनुबाट अर्डर गर्नुहोस् र जनकपुरमा तपाईंको घरमै पुर्‍याउनुहोस्">Order from our menu and get it delivered to your doorstep in Janakpur</p>
+
+      <div class="delivery-wrapper">
+        <!-- Order Form -->
+        <div class="delivery-form-box">
+          <h2 data-en="Place Your Order" data-np="आफ्नो अर्डर गर्नुहोस्">Place Your Order</h2>
+          <form id="deliveryForm" onsubmit="return submitDelivery(event)">
+            <div class="form-group">
+              <label for="custName" data-en="Full Name" data-np="पूरा नाम">Full Name</label>
+              <input type="text" id="custName" required>
+            </div>
+            <div class="form-group">
+              <label for="custPhone" data-en="Phone Number" data-np="फोन नम्बर">Phone Number</label>
+              <input type="tel" id="custPhone" required>
+            </div>
+            <div class="form-group">
+              <label for="custAddress" data-en="Delivery Address" data-np="डेलिभरी ठेगाना">Delivery Address</label>
+              <textarea id="custAddress" required></textarea>
+            </div>
+            <div class="form-group">
+              <label for="orderItems" data-en="Order Items" data-np="अर्डरका सामानहरू">Order Items</label>
+              <textarea id="orderItems" placeholder="E.g., 2x Sel Roti, 1x Dal Bhat" required></textarea>
+            </div>
+            <div class="form-group">
+              <label for="payMethod" data-en="Payment Method" data-np="भुक्तानी विधि">Payment Method</label>
+              <select id="payMethod">
+                <option value="cod" data-en="Cash on Delivery" data-np="डेलिभरीमा नगद">Cash on Delivery</option>
+                <option value="esewa" data-en="eSewa" data-np="इसेवा">eSewa</option>
+                <option value="khalti" data-en="Khalti" data-np="खल्ती">Khalti</option>
+                <option value="connectips" data-en="ConnectIPS" data-np="कनेक्ट आईपीएस">ConnectIPS</option>
+              </select>
+            </div>
+            <button type="submit" class="btn" data-en="Place Order" data-np="अर्डर गर्नुहोस्">Place Order</button>
+          </form>
+          <div id="deliveryMessage" class="order-message" style="display:none;"></div>
+        </div>
+
+        <!-- Delivery Info -->
+        <div class="delivery-info-box">
+          <h2 data-en="Delivery Info" data-np="डेलिभरी जानकारी">Delivery Info</h2>
+          <ul class="delivery-info-list">
+            <li><i class="fas fa-clock"></i> <span data-en="30-45 minutes delivery time" data-np="३०-४५ मिनेट डेलिभरी समय">30-45 minutes delivery time</span></li>
+            <li><i class="fas fa-motorcycle"></i> <span data-en="Free delivery within 3 km" data-np="३ किमी भित्र निःशुल्क डेलिभरी">Free delivery within 3 km</span></li>
+            <li><i class="fas fa-map-marker-alt"></i> <span data-en="Rs. 100 charge beyond 3 km" data-np="३ किमी भन्दा बाहिर रु. १०० शुल्क">Rs. 100 charge beyond 3 km</span></li>
+            <li><i class="fas fa-money-bill-wave"></i> <span data-en="Cash on Delivery available" data-np="डेलिभरीमा नगद उपलब्ध">Cash on Delivery available</span></li>
+            <li><i class="fas fa-mobile-alt"></i> <span data-en="Online payment: eSewa, Khalti, ConnectIPS" data-np="अनलाइन भुक्तानी: इसेवा, खल्ती, कनेक्ट आईपीएस">Online payment: eSewa, Khalti, ConnectIPS</span></li>
+            <li><i class="fas fa-phone"></i> <span data-en="Call: +977-41-555555" data-np="कल: +९७७-४१-५५५५५५">Call: +977-41-555555</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="main-footer">
+    <p data-en="RamJanaki Hotel © 2024, All Rights Reserved" data-np="रामजानकी होटल © २०२४, सर्वाधिकार सुरक्षित">RamJanaki Hotel &copy; 2024, All Rights Reserved</p>
+  </footer>
+
+  <script src="js/language.js"></script>
+  <script>
+    function submitDelivery(e) {
+      e.preventDefault();
+      const name = document.getElementById('custName').value;
+      const phone = document.getElementById('custPhone').value;
+      const address = document.getElementById('custAddress').value;
+      const items = document.getElementById('orderItems').value;
+      const pay = document.getElementById('payMethod').value;
+
+      const msgBox = document.getElementById('deliveryMessage');
+      msgBox.style.display = 'block';
+
+      if (pay === 'cod') {
+        msgBox.className = 'order-message success';
+        msgBox.innerHTML = '✅ Thank you, ' + name + '! Your order has been received. We will call you at ' + phone + ' to confirm. Pay Rs. (amount) on delivery.';
+      } else {
+        // Redirect to payment page with order info
+        window.location.href = 'payment.html?type=delivery&method=' + pay + '&name=' + encodeURIComponent(name) + '&amount=0';
+      }
+      return false;
+    }
+  </script>
+</body>
+</html>

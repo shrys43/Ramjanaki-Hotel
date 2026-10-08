@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="RamJanaki Hotel Payment - eSewa, Khalti, ConnectIPS">
+  <meta name="keywords" content="esewa,khalti,connectips,hotel payment nepal">
+  <link rel="icon" type="image/svg+xml" href="img/logo.svg">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>RamJanaki Hotel | Payment</title>
+</head>
+<body>
+  <header>
+    <nav id="navbar">
+      <div class="container">
+        <h1 class="logo">
+          <a href="index.html">
+            <img src="img/logo.svg" alt="RamJanaki Logo" class="logo-img">
+            <span>RamJanaki</span>
+          </a>
+        </h1>
+        <ul>
+          <li><a href="index.html" data-en="Home" data-np="गृहपृष्ठ">Home</a></li>
+          <li><a href="about.html" data-en="About" data-np="हाम्रोबारे">About</a></li>
+          <li><a href="menu.html" data-en="Menu" data-np="मेनु">Menu</a></li>
+          <li><a href="rooms.html" data-en="Rooms" data-np="कोठा">Rooms</a></li>
+          <li><a href="facilities.html" data-en="Facilities" data-np="सुविधा">Facilities</a></li>
+          <li><a href="delivery.html" data-en="Delivery" data-np="डेलिभरी">Delivery</a></li>
+          <li><a href="contact.html" data-en="Contact" data-np="सम्पर्क">Contact</a></li>
+          <li>
+            <button id="lang-toggle" class="lang-btn" onclick="toggleLanguage()">
+              <i class="fas fa-globe"></i> <span id="lang-label">नेपाली</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section id="payment-page" class="py-3 bg-light">
+    <div class="container">
+      <h1 class="l-heading text-center">
+        <span class="text-primary" data-en="Payment" data-np="भुक्तानी">Payment</span>
+        <span data-en="Options" data-np="विकल्पहरू">Options</span>
+      </h1>
+      <p class="text-center" data-en="Choose your preferred payment method" data-np="आफ्नो मनपर्ने भुक्तानी विधि छान्नुहोस्">Choose your preferred payment method</p>
+
+      <!-- Order Summary -->
+      <div class="payment-summary">
+        <h2 data-en="Order Summary" data-np="अर्डर सारांश">Order Summary</h2>
+        <div class="summary-row">
+          <span data-en="Item:" data-np="सामान:">Item:</span>
+          <span id="summaryItem">Room Booking</span>
+        </div>
+        <div class="summary-row">
+          <span data-en="Amount:" data-np="रकम:">Amount:</span>
+          <span id="summaryAmount">Rs. 3,500</span>
+        </div>
+      </div>
+
+      <!-- Payment Options -->
+      <div class="payment-grid">
+
+        <!-- eSewa -->
+        <div class="payment-card" onclick="selectPayment('esewa')">
+          <div class="payment-logo esewa-logo">
+            <i class="fas fa-wallet fa-3x"></i>
+          </div>
+          <h3>eSewa</h3>
+          <p data-en="Pay with your eSewa wallet" data-np="तपाईंको इसेवा वालेटबाट भुक्तानी गर्नुहोस्">Pay with your eSewa wallet</p>
+        </div>
+
+        <!-- Khalti -->
+        <div class="payment-card" onclick="selectPayment('khalti')">
+          <div class="payment-logo khalti-logo">
+            <i class="fas fa-mobile-alt fa-3x"></i>
+          </div>
+          <h3>Khalti</h3>
+          <p data-en="Pay with Khalti wallet or mobile banking" data-np="खल्ती वालेट वा मोबाइल बैंकिङबाट भुक्तानी गर्नुहोस्">Pay with Khalti wallet or mobile banking</p>
+        </div>
+
+        <!-- ConnectIPS -->
+        <div class="payment-card" onclick="selectPayment('connectips')">
+          <div class="payment-logo connectips-logo">
+            <i class="fas fa-university fa-3x"></i>
+          </div>
+          <h3>ConnectIPS</h3>
+          <p data-en="Pay directly from your bank account" data-np="तपाईंको बैंक खाताबाट सिधै भुक्तानी गर्नुहोस्">Pay directly from your bank account</p>
+        </div>
+
+        <!-- Cash on Delivery / Pay at Hotel -->
+        <div class="payment-card" onclick="selectPayment('cash')">
+          <div class="payment-logo cash-logo">
+            <i class="fas fa-money-bill-wave fa-3x"></i>
+          </div>
+          <h3 data-en="Pay at Hotel" data-np="होटलमा भुक्तानी">Pay at Hotel</h3>
+          <p data-en="Cash or card at reception" data-np="रिसेप्सनमा नगद वा कार्ड">Cash or card at reception</p>
+        </div>
+
+      </div>
+
+      <!-- Payment Demo Message -->
+      <div id="payment-demo" class="payment-demo" style="display:none;">
+        <h3 data-en="Demo Mode" data-np="डेमो मोड">Demo Mode</h3>
+        <p id="demo-message"></p>
+        <div class="demo-note">
+          <strong data-en="Note:" data-np="नोट:">Note:</strong>
+          <span data-en="This is a demonstration. Real payment requires a backend server with merchant accounts at eSewa, Khalti, and ConnectIPS." data-np="यो प्रदर्शन हो। वास्तविक भुक्तानीको लागि इसेवा, खल्ती, र कनेक्ट आईपीएससँग मर्चेन्ट खाता भएको ब्याकएन्ड सर्भर चाहिन्छ।">This is a demonstration. Real payment requires a backend server with merchant accounts at eSewa, Khalti, and ConnectIPS.</span>
+        </div>
+        <button class="btn" onclick="confirmDemoPayment()" data-en="Confirm (Demo)" data-np="पुष्टि गर्नुहोस् (डेमो)">Confirm (Demo)</button>
+      </div>
+
+      <div id="payment-success" class="payment-success" style="display:none;">
+        <i class="fas fa-check-circle fa-4x"></i>
+        <h2 data-en="Booking Confirmed!" data-np="बुकिङ पुष्टि भयो!">Booking Confirmed!</h2>
+        <p data-en="Thank you for choosing RamJanaki Hotel. A confirmation email has been sent." data-np="रामजानकी होटल रोज्नुभएकोमा धन्यवाद। पुष्टि इमेल पठाइएको छ।">Thank you for choosing RamJanaki Hotel. A confirmation email has been sent.</p>
+        <a href="index.html" class="btn" data-en="Back to Home" data-np="गृहपृष्ठमा फर्कनुहोस्">Back to Home</a>
+      </div>
+
+    </div>
+  </section>
+
+  <footer id="main-footer">
+    <p data-en="RamJanaki Hotel © 2024, All Rights Reserved" data-np="रामजानकी होटल © २०२४, सर्वाधिकार सुरक्षित">RamJanaki Hotel &copy; 2024, All Rights Reserved</p>
+  </footer>
+
+  <script src="js/language.js"></script>
+  <script>
+    // Read URL parameters
+    const params = new URLSearchParams(window.location.search);
+    const room = params.get('room');
+    const price = params.get('price');
+    const type = params.get('type');
+    const method = params.get('method');
+
+    if (room && price) {
+      document.getElementById('summaryItem').textContent = room.charAt(0).toUpperCase() + room.slice(1) + ' Room';
+      document.getElementById('summaryAmount').textContent = 'Rs. ' + Number(price).toLocaleString();
+    }
+    if (type === 'delivery') {
+      document.getElementById('summaryItem').textContent = 'Food Delivery Order';
+    }
+
+    let selectedProvider = method || null;
+
+    function selectPayment(provider) {
+      selectedProvider = provider;
+      const demoBox = document.getElementById('payment-demo');
+      const message = document.getElementById('demo-message');
+      demoBox.style.display = 'block';
+
+      const messages = {
+        'esewa': '✅ You selected <strong>eSewa</strong>. In production, you would be redirected to eSewa\'s secure payment page to enter your eSewa ID and MPIN.',
+        'khalti': '✅ You selected <strong>Khalti</strong>. In production, you would be redirected to Khalti\'s payment page where you can pay via wallet, eBanking, or mobile banking.',
+        'connectips': '✅ You selected <strong>ConnectIPS</strong>. In production, you would be redirected to your bank\'s login page to authorize the payment.',
+        'cash': '✅ You selected <strong>Pay at Hotel</strong>. Please pay at the reception during check-in. Your booking is confirmed without prepayment.'
+      };
+      message.innerHTML = messages[provider] || 'Please select a payment method.';
+
+      // Scroll to demo box
+      demoBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+
+    function confirmDemoPayment() {
+      document.getElementById('payment-demo').style.display = 'none';
+      document.getElementById('payment-success').style.display = 'block';
+      document.getElementById('payment-success').scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  </script>
+</body>
+</html>

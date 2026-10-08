@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="RamJanaki Hotel Facilities - All amenities and services">
+  <meta name="keywords" content="hotel facilities,janakpur hotel amenities,wifi,parking,restaurant">
+  <link rel="icon" type="image/svg+xml" href="img/logo.svg">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>RamJanaki Hotel | Facilities</title>
+</head>
+<body>
+  <header>
+    <nav id="navbar">
+      <div class="container">
+        <h1 class="logo">
+          <a href="index.html">
+            <img src="img/logo.svg" alt="RamJanaki Logo" class="logo-img">
+            <span>RamJanaki</span>
+          </a>
+        </h1>
+        <ul>
+          <li><a href="index.html" data-en="Home" data-np="गृहपृष्ठ">Home</a></li>
+          <li><a href="about.html" data-en="About" data-np="हाम्रोबारे">About</a></li>
+          <li><a href="menu.html" data-en="Menu" data-np="मेनु">Menu</a></li>
+          <li><a href="rooms.html" data-en="Rooms" data-np="कोठा">Rooms</a></li>
+          <li><a href="facilities.html" class="current" data-en="Facilities" data-np="सुविधा">Facilities</a></li>
+          <li><a href="delivery.html" data-en="Delivery" data-np="डेलिभरी">Delivery</a></li>
+          <li><a href="contact.html" data-en="Contact" data-np="सम्पर्क">Contact</a></li>
+          <li>
+            <button id="lang-toggle" class="lang-btn" onclick="toggleLanguage()">
+              <i class="fas fa-globe"></i> <span id="lang-label">नेपाली</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section id="facilities-page" class="py-3 bg-light">
+    <div class="container">
+      <h1 class="l-heading text-center">
+        <span class="text-primary" data-en="Hotel" data-np="होटलको">Hotel</span>
+        <span data-en="Facilities" data-np="सुविधाहरू">Facilities</span>
+      </h1>
+      <p class="text-center" data-en="Everything you need for a comfortable stay" data-np="आरामदायक बसाइको लागि तपाईंलाई चाहिने सबै कुरा">Everything you need for a comfortable stay</p>
+
+      <div class="facilities-grid">
+
+        <div class="facility-card">
+          <i class="fas fa-wifi fa-3x"></i>
+          <h3 data-en="Free WiFi" data-np="निःशुल्क वाइफाइ">Free WiFi</h3>
+          <p data-en="High-speed internet in all rooms and public areas." data-np="सबै कोठा र सार्वजनिक क्षेत्रमा उच्च गतिको इन्टरनेट।">High-speed internet in all rooms and public areas.</p>
+        </div>
+
+        <div class="facility-card">
+          <i class="fas fa-utensils fa-3x"></i>
+          <h3 data-en="Restaurant" data-np="रेस्टुरेन्ट">Restaurant</h3>
+          <p data-en="Authentic Nepali and Mithila cuisine served all day." data-np="दिनभर प्रामाणिक नेपाली र मैथिली व्यञ्जन।">Authentic Nepali and Mithila cuisine served all day.</p>
+        </div>
+
+        <div class="facility-card">
+          <i class="fas fa-concierge-bell fa-3x"></i>
+          <h3 data-en="Room Service" data-np="रूम सेवा">Room Service</h3>
+          <p data-en="24/7 in-room dining and assistance." data-np="२४/७ कोठामै भोजन र सहयोग।">24/7 in-room dining and assistance.</p>
+        </div>
+
+        <div class="facility-card">
+          <i class="fas fa-tshirt fa-3x"></i>
+          <h3 data-en="Laundry Service" data-np="लाउन्ड्री सेवा">Laundry Service</h3>
+          <p data-en="Same-day laundry and dry cleaning." data-np="एकै दिनको लाउन्ड्री र ड्राई क्लिनिङ।">Same-day laundry and dry cleaning.</p>
+        </div>
+
+        <div class="facility-card">
+          <i class="fas fa-parking fa-3x"></i>
+          <h3 data-en="Free Parking" data-np="निःशुल्क पार्किङ">Free Parking</h3>
+          <p data-en="Secure on-site parking for all guests." data-np="सबै पाहुनाको लागि सुरक्षित पार्किङ।">Secure on-site parking for all guests.</p>
+        </div>
+
+        <div class="facility-card">
+          <i class="fas fa-car fa-3x"></i>
+          <h3 data-en="Airport Pickup" data-np="एयरपोर्ट पिकअप">Airport Pickup</h3>
+          <p data-en="Complimentary pickup from Janakpur Airport." data-np="जनकपुर एयरपोर्टबाट निःशुल्क पिकअप।">Complimentary pickup from Janakpur Airport.</p>
+        </div>
+
+        <div class="facility-card">
+          <i class="fas fa-place-of-worship fa-3x"></i>
+          <h3 data-en="Temple Shuttle" data-np="मन्दिर शटल">Temple Shuttle</h3>
+          <p data-en="Free shuttle to Janaki Mandir and nearby temples." data-np="जानकी मन्दिर र नजिकका मन्दिरहरूमा निःशुल्क शटल।">Free shuttle to Janaki Mandir and nearby temples.</p>
+        </div>
+
+        <div class="facility-card">
+          <i class="fas fa-users fa-3x"></i>
+          <h3 data-en="Conference Room" data-np="सम्मेलन कक्ष">Conference Room</h3>
+          <p data-en="Fully equipped room for business meetings." data-np="व्यापारिक बैठकको लागि पूर्ण सुसज्जित कक्ष।">Fully equipped room for business meetings.</p>
+        </div>
+
+        <div class="facility-card">
+          <i class="fas fa-tree fa-3x"></i>
+          <h3 data-en="Garden" data-np="बगैंचा">Garden</h3>
+          <p data-en="Peaceful garden for relaxation and meditation." data-np="आराम र ध्यानको लागि शान्त बगैंचा।">Peaceful garden for relaxation and meditation.</p>
+        </div>
+
+        <div class="facility-card">
+          <i class="fas fa-dumbbell fa-3x"></i>
+          <h3 data-en="Fitness Center" data-np="फिटनेस सेन्टर">Fitness Center</h3>
+          <p data-en="Modern gym equipment for your daily workout." data-np="दैनिक व्यायामको लागि आधुनिक जिम उपकरण।">Modern gym equipment for your daily workout.</p>
+        </div>
+
+        <div class="facility-card">
+          <i class="fas fa-hot-tub fa-3x"></i>
+          <h3 data-en="Hot Water 24/7" data-np="२४/७ तातोपानी">Hot Water 24/7</h3>
+          <p data-en="Round-the-clock hot water in all rooms." data-np="सबै कोठामा चौबीसै घण्टा तातोपानी।">Round-the-clock hot water in all rooms.</p>
+        </div>
+
+        <div class="facility-card">
+          <i class="fas fa-bolt fa-3x"></i>
+          <h3 data-en="Power Backup" data-np="पावर ब्याकअप">Power Backup</h3>
+          <p data-en="Uninterrupted power supply with generator." data-np="जेनेरेटरसहित निर्बाध विद्युत आपूर्ति।">Uninterrupted power supply with generator.</p>
+        </div>
+
+        <div class="facility-card">
+          <i class="fas fa-shield-alt fa-3x"></i>
+          <h3 data-en="24/7 Security" data-np="२४/७ सुरक्षा">24/7 Security</h3>
+          <p data-en="Round-the-clock security and CCTV surveillance." data-np="चौबीसै घण्टा सुरक्षा र सीसीटीभी निगरानी।">Round-the-clock security and CCTV surveillance.</p>
+        </div>
+
+        <div class="facility-card">
+          <i class="fas fa-wheelchair fa-3x"></i>
+          <h3 data-en="Accessible Rooms" data-np="सुलभ कोठा">Accessible Rooms</h3>
+          <p data-en="Wheelchair-friendly rooms and facilities." data-np="ह्वीलचेयर-मैत्री कोठा र सुविधाहरू।">Wheelchair-friendly rooms and facilities.</p>
+        </div>
+
+        <div class="facility-card">
+          <i class="fas fa-smoking-ban fa-3x"></i>
+          <h3 data-en="Non-Smoking Rooms" data-np="धूम्रपान-मुक्त कोठा">Non-Smoking Rooms</h3>
+          <p data-en="Clean, smoke-free environment throughout." data-np="सफा, धूम्रपान-मुक्त वातावरण।">Clean, smoke-free environment throughout.</p>
+        </div>
+
+        <div class="facility-card">
+          <i class="fas fa-shopping-bag fa-3x"></i>
+          <h3 data-en="Gift Shop" data-np="उपहार पसल">Gift Shop</h3>
+          <p data-en="Local handicrafts and souvenirs from Mithila." data-np="मैथिलीका स्थानीय हस्तकला र सम्झनाका सामान।">Local handicrafts and souvenirs from Mithila.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer id="main-footer">
+    <p data-en="RamJanaki Hotel © 2024, All Rights Reserved" data-np="रामजानकी होटल © २०२४, सर्वाधिकार सुरक्षित">RamJanaki Hotel &copy; 2024, All Rights Reserved</p>
+  </footer>
+
+  <script src="js/language.js"></script>
+</body>
+</html>
